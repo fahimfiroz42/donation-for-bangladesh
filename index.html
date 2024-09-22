@@ -46,7 +46,7 @@
               
               <a id="blog" onclick="location.href ='./blog.html' " class="btn btn-ghost text-xl bg-lightgreen">Blog</a>
             </div>
-            <div class="navbar-center hidden lg:flex space-x-5">
+            <div class="navbar-center flex flex-col md:flex-row lg:flex-row space-y-5 md:space-x-5  lg:space-x-5">
                 <img src="./assets/logo.png" alt="">
                 <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
             </div>
@@ -81,8 +81,8 @@
     <section id="donation-form" class="w-10/12 mx-auto space-y-8 ">
 
         <!-- donation 1 -->
-         <div class="flex items-center gap-10 border rounded-2xl p-6 ">
-            <img src="./assets/noakhali.png" alt="">
+         <div class="flex flex-col lg:flex-row items-center gap-10 border rounded-2xl p-6 ">
+            <img src="./assets/noakhali.png" alt="" class="w-full " >
             <!-- donation 1 content -->
              <div class="space-y-6">
                 <button class="btn text-lightdark"><img src="./assets/coin.png" alt=""><span id="total-amount-noakhali">0</span>BDT</button>
@@ -97,8 +97,8 @@
          </div>
 
        <!-- donation 2 -->
-         <div class="flex items-center gap-10 border rounded-2xl p-6 ">
-            <img src="./assets/feni.png" alt="">
+         <div class="flex flex-col  lg:flex-row items-center gap-10 border rounded-2xl p-6 ">
+            <img src="./assets/feni.png" alt="" class="w-full">
             <!-- donation 2 content -->
              <div class="space-y-7">
                 <button class="btn text-lightdark"><img src="./assets/coin.png" alt=""><span id="total-amount-feni">0</span>BDT</button>
@@ -114,11 +114,11 @@
 
 
          <!-- donation 3 -->
-         <div class="flex items-center gap-10 border rounded-2xl p-6  ">
-            <img src="./assets/quota-protest.png" alt="" class="">
+         <div class="flex flex-col lg:flex-row items-center gap-10 border rounded-2xl p-6  ">
+            <img src="./assets/quota-protest.png" alt="" class="w-full">
             <!-- donation 2 content -->
              <div class="space-y-7">
-                <button class="btn text-lightdark"><img src="./assets/coin.png" alt=""><span id="total-amount-quota">0</span>BDT</button>
+                <button class="btn text-lightdark"><img src="./assets/coin.png" alt="" class=""><span id="total-amount-quota">0</span>BDT</button>
                 <h1 class="text-xl font-bold" >Aid for Injured in the Quota Movement</h1>
                 <p class="text-lightdark text-base"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                 <input id="donate-value-quota" type="text" placeholder="Write Donate Amount" class="input input-bordered w-full " /><br>
