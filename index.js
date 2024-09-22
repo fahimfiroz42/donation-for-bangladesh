@@ -2,6 +2,19 @@ const historyView=document.getElementById('history-form')
 const historyBtn=document.getElementById('history-btn')
 const donationBtn=document.getElementById('donation-btn')
 const donationForm=document.getElementById('donation-form')
+const blogBtn=document.getElementById('blog')
+
+
+
+
+
+
+
+
+
+
+
+
 // history form functionality
 historyBtn.addEventListener('click',function(){
 
