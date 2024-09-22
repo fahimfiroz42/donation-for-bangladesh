@@ -52,7 +52,7 @@
             </div>
             <div class="navbar-end">
 
-              <a class="btn"><img src="./assets/coin.png" alt=""><span class="font-bold text-xl text-lightdark ">2500</span></a>
+              <a class="btn"><img src="./assets/coin.png" alt=""><span class="font-bold text-xl text-lightdark " id="total-balance">2500</span></a>
             </div>
           </div>
 
@@ -85,10 +85,10 @@
             <img src="./assets/noakhali.png" alt="">
             <!-- donation 1 content -->
              <div class="space-y-6">
-                <button class="btn text-lightdark"><img src="./assets/coin.png" alt=""><span>0</span>BDT</button>
+                <button class="btn text-lightdark"><img src="./assets/coin.png" alt=""><span id="total-amount-noakhali">0</span>BDT</button>
                 <h1 class="text-xl font-bold" >Donate for Flood at Noakhali, Bangladesh</h1>
                 <p class="text-lightdark text-base"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                <input type="text" placeholder="Write Donate Amount" class="input input-bordered w-full " /><br>
+                <input id="donate-value" type="text" placeholder="Write Donate Amount" class="input input-bordered w-full " /><br>
                 <!-- donate 1 button -->
                 <button id="donate1" onclick="my_modal_5.showModal()"  class="btn text-xl font-semibold bg-lightgreen w-full  ">Donate Now</button>
 
@@ -101,10 +101,10 @@
             <img src="./assets/feni.png" alt="">
             <!-- donation 2 content -->
              <div class="space-y-7">
-                <button class="btn text-lightdark"><img src="./assets/coin.png" alt=""><span>0</span>BDT</button>
+                <button class="btn text-lightdark"><img src="./assets/coin.png" alt=""><span id="total-amount-feni">0</span>BDT</button>
                 <h1 class="text-xl font-bold" >Donate for Flood Relief in Feni,Bangladesh</h1>
                 <p class="text-lightdark text-base"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-                <input type="text" placeholder="Write Donate Amount" class="input input-bordered w-full " /><br>
+                <input id="donate-value-feni" type="text" placeholder="Write Donate Amount" class="input input-bordered w-full " /><br>
                 <!-- donate 2 button -->
                 <button id="donate2" onclick="my_modal_5.showModal()"  class="btn text-xl font-semibold bg-lightgreen w-full  ">Donate Now</button>
 
@@ -118,10 +118,10 @@
             <img src="./assets/quota-protest.png" alt="" class="">
             <!-- donation 2 content -->
              <div class="space-y-7">
-                <button class="btn text-lightdark"><img src="./assets/coin.png" alt=""><span>0</span>BDT</button>
+                <button class="btn text-lightdark"><img src="./assets/coin.png" alt=""><span id="total-amount-quota">0</span>BDT</button>
                 <h1 class="text-xl font-bold" >Aid for Injured in the Quota Movement</h1>
                 <p class="text-lightdark text-base"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
-                <input type="text" placeholder="Write Donate Amount" class="input input-bordered w-full " /><br>
+                <input id="donate-value-quota" type="text" placeholder="Write Donate Amount" class="input input-bordered w-full " /><br>
                 <!-- donate 3 button -->
                 <button id="donate3" onclick="my_modal_5.showModal()"  class="btn text-xl font-semibold bg-lightgreen w-full  ">Donate Now</button>
 
@@ -135,11 +135,7 @@
     <!-- history section -->
 
     <section id="history-form" class="w-10/12 mx-auto space-y-8 mt-20 hidden">
-        <div class="border rounded-xl p-5">
-            <h1 class="font-bold text-xl">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
-            <p class="text-lightdark text-base font-light">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
-
-        </div>
+        
 
 
 
@@ -155,7 +151,7 @@
           </div>
           <p class="py-4 text-center  ">You Have Donated For Humankind</p>
           <h1 class="text-2xl font-bold text-center">Succesfully</h1>
-          <div class="modal-action">
+          <div class="modal-action justify-center">
             <form method="dialog">
               
               <button class="btn bg-lightgreen text-base">Close confirmation</button>
