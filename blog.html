@@ -36,7 +36,7 @@
 <body class="font-lexend">
     <!-- nav bar -->
 
-    <header>
+    <header class="sticky top-0  backdrop-blur-md z-10">
         <nav>
             <div class="navbar bg-headcolour p-5  ">
                 <div class="navbar-start">
@@ -44,7 +44,7 @@
                 </div>
                 <div class="navbar-center flex flex-col md:flex-row lg:flex-row space-y-5 md:space-x-5  lg:space-x-5">
                     <img src="./assets/logo.png" alt="">
-                    <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+                    <h1 class="text-2xl hidden sm:block font-semibold">Donate Bangladesh</h1>
                 </div>
                 <div class="navbar-end">
     
@@ -60,6 +60,108 @@
 
 
     <main>
+        <section class="mt-20 ">
+
+            <h1 class=" w-11/12 lg:w-5/12 mx-auto text-3xl text-center border-b-4 border-lightgreen">Read Our Latest Blog</h1>
+
+
+<div class="space-y-5 w-11/12 mx-auto my-20 border rounded-xl p-4">
+    <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-bold">What is the Document Object Model (DOM)?</div>
+        <div class="collapse-content">
+          <p class="text-justify">DOM is short form of <span class="font-bold">Document Object Model</span>  an interface for HTML.HTML is the language that builds websites, and JavaScript is the language that makes the information dynamic on those websites change over time.Therefore, HTML and Javascript must work together to develop and manage a website. <br><br> However, Javascript cannot understand HTML elements, which is where DOM comes for help. The Document Object Model (DOM) turns illegible HTML elements into objects, making it easier for Javascript to  access the material. <br><br>
+            The structure of the DOM is of a tree or a forest. The top element of the structure represents the root node of the html element, and the branches represent all the other elements that come under the html tag. 
+         </p>
+        </div>
+      </div>
+      
+      
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-bold">How do you select an element from the DOM?</div>
+        <div class="collapse-content">
+          <p>One way of selecting an element is by using the <span class="font-bold">.getElementById()</span> method and passing the desired ID as an argument. <br><br>
+         Another way of selecting an element is by using the <span class="font-bold">.querySelector() </span> method and passing a CSS selector as an argument.<br><br>
+         The <span class="font-bold">.querySelectorAll()</span> method works in a similar way to .querySelector(), but it returns an array-like object of all the elements that match the CSS selector.The object returned from .querySelectorAll() is a NodeList, which is array-like. This means that you can access the elements in the list using the square bracket notation, just like you would with an array. You can also use the .forEach() method to iterate over the elements in the list. However, not all array methods are available on a NodeList. <br><br>
+
+         Another way of selecting an element is by using the <span class="font-bold">.getElementsByClassName() </span>
+         Selects all elements with the specified class name.
+
+         There are two more way <span class="font-bold">.getElementsByTagName()</span> and <span class="font-bold">.getElementsByName() </span>
+
+
+        </p>
+        </div>
+      </div>
+      
+      
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-bold">What is event delegation in the context of the DOM, and why is it useful?</div>
+        <div class="collapse-content">
+          <p>Event delegation is a DOM-based technique for handling events on a collection of elements by attaching a single event listener to a parent element rather than adding individual event listeners to each child. <br> <br>
+           <span class="font-bold">How it works</span>
+           <li>We connect a single event listener to a parent element that contains all the elements We are interested in, rather than attaching an event listener to each element individually.</li>
+           <li> When an event occurs on one of the child elements, the event bubbles up the DOM tree and reaches the parent element.</li>
+           <li>The event listener on the parent element checks the target of the event and performs the desired action.</li>
+
+           <br>
+           <span class="font-bold">Event delegation is usefulness </span> <br>
+           <li>Efficient memory usage</li>
+           <li>Easy maintenance</li>
+           <li>Flexibility</li>
+           <li>Improved code organization</li> <br> <br>
+           By using event delegation, we can handle events on multiple elements with a single event listener, making our code more efficient, maintainable, and flexible.
+
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-bold">How do you manipulate an element's attributes and styles using the DOM?
+        </div>
+        <div class="collapse-content">
+          <p>For attributes, we can use the <span class="font-bold"> getAttribute()</span> and <span class="font-bold">setAttribute()</span> methods to get and set the value of an attribute <br> <br>
+          We can also use the <span class="font-bold"> removeAttribute()</span> method to delete an attribute.This method is usefull to delete the atribute.<br> <br>
+          For styles, we can use the style property to get and set the value of a style. For example, to set the color of an element:  <br>
+          <span class="font-bold">
+         <code> const p = document.querySelector('.myParagraph');<br>
+            p.style.color = '#007bff';</code>
+        </span> <br><br>
+        We can also use the classList property to manipulate the class attribute of an element.For example to add a class: <br>
+        <code class="font-bold">
+            h1.classList.add('color-primary');
+
+        </code> <br> <br>
+       To remove a class, we can use the <span class="font-bold">remove()</span> <br>
+       <code class="font-bold">
+        h1.classList.remove('color-primary');
+       </code><br> <br>
+
+       To create, add, and remove elements, we can use the <span class="font-bold">createElement()</span> method to create a new element, the <span class="font-bold">append()</span> method to add an element to the DOM. <br> <br>
+
+       To insert an element at a specific position, you can use the <span class="font-bold">insertBefore()</span> method.
+
+        
+        
+        
+        </p>
+        </div>
+      </div>
+      
+
+
+
+</div>
+
+
+
+
+
+
+</section>
 
         
 

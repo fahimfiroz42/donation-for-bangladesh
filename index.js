@@ -3,6 +3,9 @@ const historyBtn=document.getElementById('history-btn')
 const donationBtn=document.getElementById('donation-btn')
 const donationForm=document.getElementById('donation-form')
 const blogBtn=document.getElementById('blog')
+const modal=document.getElementById('my_modal_1')
+const modal1=document.getElementById('my_modal_5')
+
 
 const donate2=document.getElementById('donate2')
 const donate3=document.getElementById('donate3')
@@ -14,14 +17,14 @@ const donateBtn1=document.getElementById('donate1')
 // reusable function to get input value
 function getInputValueById(id){
     const inputValue=document.getElementById(id).value
-    const convert=parseFloat(inputValue)
+    const convert=Number(inputValue)
     return convert
     
 }
 // reusable function to get innerText and convert to number
 function getInnerTextById(id){
     const inputValue=document.getElementById(id).innerText
-    const convert=parseFloat(inputValue)
+    const convert=Number(inputValue)
     return convert
     
 }
@@ -35,11 +38,28 @@ function getInnerTextValueById(id){
 }
 
 
+
 donateBtn1.addEventListener('click',function(){
   
     const convertNumber=getInputValueById('donate-value')
     const totalValue=getInnerTextById('total-amount-noakhali')
     const totalBalance=getInnerTextById('total-balance')
+
+    if(convertNumber>totalBalance ||convertNumber<=0 || isNaN(convertNumber)){
+       
+      modal.showModal()
+      return
+    
+    }else{
+        modal1.showModal()
+    }
+ 
+
+
+
+
+
+
     const remainingBalance=totalBalance-convertNumber
     const addRemainigBalance=getInnerTextValueById('total-balance')
     addRemainigBalance.innerText=remainingBalance
@@ -64,6 +84,18 @@ donate2.addEventListener('click',function(){
     const convertNumber=getInputValueById('donate-value-feni')
     const totalValue=getInnerTextById('total-amount-feni')
     const totalBalance=getInnerTextById('total-balance')
+    
+    if(convertNumber>totalBalance ||convertNumber<=0 || isNaN(convertNumber)){
+       
+        modal.showModal()
+        return
+      
+      }else{
+          modal1.showModal()
+      }
+   
+
+
     const remainingBalance=totalBalance-convertNumber
     const addRemainigBalance=getInnerTextValueById('total-balance')
     addRemainigBalance.innerText=remainingBalance
@@ -89,6 +121,17 @@ donate3.addEventListener('click',function(){
     const convertNumber=getInputValueById('donate-value-quota')
     const totalValue=getInnerTextById('total-amount-quota')
     const totalBalance=getInnerTextById('total-balance')
+
+    
+    if(convertNumber>totalBalance ||convertNumber<=0 || isNaN(convertNumber)){
+       
+        modal.showModal()
+        return
+      
+      }else{
+          modal1.showModal()
+      }
+   
     const remainingBalance=totalBalance-convertNumber
     const addRemainigBalance=getInnerTextValueById('total-balance')
     addRemainigBalance.innerText=remainingBalance
@@ -113,16 +156,6 @@ historyView.appendChild(newDiv)
 
 
 
-
-
-
-
-
-
-
-
-
-
 // history form functionality
 historyBtn.addEventListener('click',function(){
 
@@ -132,6 +165,7 @@ historyBtn.addEventListener('click',function(){
     donationBtn.classList.remove('bg-lightgreen')
     donationBtn.classList.add('text-lightdark','bg-white')
     donationForm.classList.add('hidden')
+    
 
 })
 
