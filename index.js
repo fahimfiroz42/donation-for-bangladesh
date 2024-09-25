@@ -68,7 +68,7 @@ function toggleForm(historyBtn, donationBtn, historyView, donationForm) {
     // create new div
     const newDiv = document.createElement('div');
     newDiv.classList.add("border", "rounded-xl", "p-5");
-    newDiv.innerHTML = `<h1 class="font-bold text-xl">${convertNumber} Taka is Donated for ${location} at ${location}, Bangladesh</h1>
+    newDiv.innerHTML = `<h1 class="font-bold text-xl">${convertNumber} Taka is Donated for ${location} , Bangladesh</h1>
                <p class="text-lightdark text-base font-light">Date : ${new Date().toDateString()} ${new Date().toTimeString()}</p>
   `;
     // push the item
@@ -90,7 +90,7 @@ function toggleForm(historyBtn, donationBtn, historyView, donationForm) {
 //donate button 3
    
   donate3.addEventListener('click', function() {
-    donate('donate-value-quota', 'total-amount-quota', 'total-balance', 'Quota Movement-2024');
+    donate('donate-value-quota', 'total-amount-quota', 'total-balance', 'Aid for Injured in the Quota Movement');
   });
 
 
