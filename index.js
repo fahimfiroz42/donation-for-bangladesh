@@ -83,7 +83,7 @@ function toggleForm(historyBtn, donationBtn, historyView, donationForm) {
   
 //   donate button 2
   donate2.addEventListener('click', function() {
-    donate('donate-value-feni', 'total-amount-feni', 'total-balance', 'famine-2024 at Feni');
+    donate('donate-value-feni', 'total-amount-feni', 'total-balance', 'Flood Relief in Feni');
   });
   
 
