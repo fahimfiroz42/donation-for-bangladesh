@@ -46,6 +46,7 @@ function toggleForm(historyBtn, donationBtn, historyView, donationForm) {
 
 // reusable function to donate button
   function donate(id, totalId, balanceId, location) {
+    const reset=document.getElementById(id)
     const convertNumber = getInputValueById(id);
     const totalValue = getInnerTextById(totalId);
     const totalBalance = getInnerTextById(balanceId);
@@ -64,6 +65,7 @@ function toggleForm(historyBtn, donationBtn, historyView, donationForm) {
     const subtotal = convertNumber + totalValue;
     const locationAmount = getInnerTextValueById(totalId);
     locationAmount.innerText = subtotal;
+    reset.value=''
   
     // create new div
     const newDiv = document.createElement('div');
